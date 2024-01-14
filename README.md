@@ -10,7 +10,7 @@ below are the code for the beam section, 12.5deg beam
 (fyi, typical landing light beam aren't that wide, less than 15deg. taxi lights are much wider than 30, but less than 60deg.
 ```
 [Emitter.3]
-Lifetime=0, 0
+Lifetime=0.5, 0.5
 Delay=0.00, 0.00
 Bounce=0.00
 Rate=1.00, 1.00
