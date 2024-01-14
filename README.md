@@ -7,6 +7,7 @@ Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to s
 
 TL;DR
 below are the code for the beam section, 12.5deg beam
+(fyi, typical landing light beam aren't that wide, less than 15deg. taxi lights are much wider than 30, but less than 60deg.
 ```
 [Emitter.3]
 Lifetime=0, 0
