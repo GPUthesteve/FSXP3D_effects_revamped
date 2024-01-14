@@ -1,7 +1,7 @@
 [Library Effect]
 Lifetime=5
 Version=2.00
-Display Name=MCX light
+Display Name=7deg beam LL
 Radius=-1
 Priority=0
 
@@ -211,8 +211,8 @@ Heading=0.00, 0.00
 Light=1
 [Particle.3]
 Lifetime=0.00, 0.00
-Type=28
-X Scale=250.00, 250.00
+Type=28 //DL tag
+X Scale=1250.00, 1250.00 //Range in metres
 Y Scale=0.00, 0.00
 Z Scale=0.00, 0.00
 X Scale Rate=0.00, 0.00
