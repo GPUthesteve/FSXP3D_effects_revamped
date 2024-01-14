@@ -7,7 +7,7 @@ Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to s
 
 TL;DR
 below are the code for the beam section, 12.5deg beam
-
+```
 [Emitter.3]
 Lifetime=0, 0
 Delay=0.00, 0.00
@@ -75,3 +75,4 @@ Intensity Day=6100.00
 Intensity Night=6100.00
 Static=1
 Type=28
+```
