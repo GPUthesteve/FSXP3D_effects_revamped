@@ -61,19 +61,4 @@ Falloff Exponent=3.00
 Inner Cone Angle=2.00
 Outer Cone Angle=12.5
 
-[Light.3]
-Lifetime=0.00, 0.00
-Color Start=255, 255, 210, 155
-Color End=255, 255, 210, 155
-Bounce=0.00
-X Scale Goal=0.00
-Y Scale Goal=0.00
-Z Scale Goal=0.00
-Falloff Exponent=3.00
-Inner Cone Angle=2.00
-Outer Cone Angle=12.5
-Intensity Day=6100.00
-Intensity Night=6100.00
-Static=1
-Type=28
 ```
