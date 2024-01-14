@@ -238,19 +238,3 @@ Z Scale Goal=0.00
 Falloff Exponent=3.00
 Inner Cone Angle=2.00
 Outer Cone Angle=7.00
-
-[Light.3]
-Lifetime=0.00, 0.00
-Color Start=255, 255, 210, 150
-Color End=255, 255, 210, 150
-Bounce=0.00
-X Scale Goal=0.00
-Y Scale Goal=0.00
-Z Scale Goal=0.00
-Falloff Exponent=3.00
-Inner Cone Angle=2.00
-Outer Cone Angle=7.00
-Intensity Day=1.00
-Intensity Night=1.00
-Static=1
-Type=28
