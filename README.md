@@ -3,4 +3,4 @@ A simplest update to your old fx_landing.fx utilizing latest Dynamic Lighting Te
 no need to close source since it's "Modifiable", Use in any project is very welcome.
 
 
-Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else than call this effect.
+Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else, then call this effect in your project as needed.
