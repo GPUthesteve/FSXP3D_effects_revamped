@@ -1,12 +1,14 @@
+
 [Library Effect]
 Lifetime=5
 Version=2.00
-Display Name=7deg beam LL
+Display Name=12.5deg LL
 Radius=-1
 Priority=0
 
 [Properties]
 
+//begin cosmetics
 [Emitter.0]
 Lifetime=0.50, 0.50
 Delay=0.00, 0.00
@@ -186,9 +188,11 @@ Z Scale Goal=0.00
 Extrude Length=0.00
 Extrude Pitch Max=0.00
 Extrude Heading Max=0.00
+//Cosmetics end
 
-[Emitter.3]
-Lifetime=0.50, 0.50
+//begin actual beam
+[Emitter.3] //calling things part 1
+Lifetime=0.5, 0.5
 Delay=0.00, 0.00
 Bounce=0.00
 Rate=1.00, 1.00
@@ -208,11 +212,11 @@ Z Offset=0.00, 0.00
 Pitch=0.00, 0.00
 Bank=0.00, 0.00
 Heading=0.00, 0.00
-Light=1
-[Particle.3]
+
+[Particle.3] //calling things part 2
 Lifetime=0.00, 0.00
 Type=28 //DL tag
-X Scale=1250.00, 1250.00 //Range in metres
+X Scale=1000.00, 1000.00 //defines range in metres
 Y Scale=0.00, 0.00
 Z Scale=0.00, 0.00
 X Scale Rate=0.00, 0.00
@@ -227,14 +231,15 @@ Fade In=0.00, 0.00
 Fade Out=0.00, 0.00
 Static=1
 Face=0, 0, 0
-Light=1
-[ParticleAttributes.3]
-Color Start=255, 255, 210, 150
-Color End=255, 255, 210, 150
+
+[ParticleAttributes.3]//the beam itself
+Color Start=255, 255, 210, 155
+Color End=255, 255, 210, 155
 Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
 Z Scale Goal=0.00
 Falloff Exponent=3.00
 Inner Cone Angle=2.00
-Outer Cone Angle=7.00
+Outer Cone Angle=12.5
+//end of file
