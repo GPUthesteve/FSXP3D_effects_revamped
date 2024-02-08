@@ -256,6 +256,8 @@ Outer Cone Angle=12.5
 //end of file
 ```
 below is result, TDS 737(NGX Merged)
-https://media.discordapp.net/attachments/859458839426236454/1205049839331844116/2024-2-6_15-31-10-682.png?ex=65d6f51e&is=65c4801e&hm=4e71f547a0fb87caa03ddc143ee89d2d760833c57a8e13b00e3af155a21969f5&=&format=webp&quality=lossless&width=1276&height=671
+![image](https://github.com/GPUthesteve/P3D_LandingLightEffectUpd/assets/89721316/3ec13a7b-fb83-4fae-a65a-c9b0c332dd29)
+
 VC
-https://cdn.discordapp.com/attachments/859458839426236454/1205049840116039690/2024-2-6_15-15-3-325.png?ex=65d6f51e&is=65c4801e&hm=3d063ebcf4c1e8050b4dcc42e287c0ab5237eaf1cce7f18082174ac8aad4da3a&
+![image](https://github.com/GPUthesteve/P3D_LandingLightEffectUpd/assets/89721316/0c4fe356-4f20-4d40-a76c-cc33590bad89)
+
