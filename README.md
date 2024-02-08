@@ -260,4 +260,4 @@ below is result, TDS 737(NGX Merged)
 
 VC
 ![image](https://github.com/GPUthesteve/P3D_LandingLightEffectUpd/assets/89721316/0c4fe356-4f20-4d40-a76c-cc33590bad89)
-
+Rumors about DL litting entire VC. I think because wrong angle is used to create light. even though P3D treats "VC viewpoint" fuselage as transparent. (I mean, not much ppl are modelling fuse anyways)
