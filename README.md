@@ -6,7 +6,7 @@ no need to close source since it's "Modifiable", Use in any project is very welc
 Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else, then call this effect in your project as needed.
 
 TL;DR
-below are the code for the effect, rendering 12.5deg light beam
+below are the code for the effect, rendering 12.5deg light beam. If you configure correctly it won't lit your VC up
 (fyi, typical landing light beam aren't that wide, less than 15deg. taxi lights are much wider than 30, but less than 60deg.
 ```
 
@@ -255,3 +255,7 @@ Inner Cone Angle=2.00
 Outer Cone Angle=12.5
 //end of file
 ```
+below is result, TDS 737(NGX Merged)
+https://media.discordapp.net/attachments/859458839426236454/1205049839331844116/2024-2-6_15-31-10-682.png?ex=65d6f51e&is=65c4801e&hm=4e71f547a0fb87caa03ddc143ee89d2d760833c57a8e13b00e3af155a21969f5&=&format=webp&quality=lossless&width=1276&height=671
+VC
+https://cdn.discordapp.com/attachments/859458839426236454/1205049840116039690/2024-2-6_15-15-3-325.png?ex=65d6f51e&is=65c4801e&hm=3d063ebcf4c1e8050b4dcc42e287c0ab5237eaf1cce7f18082174ac8aad4da3a&
