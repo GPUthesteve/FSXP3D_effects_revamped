@@ -6,7 +6,7 @@ no need to close source since it's "Modifiable", Use in any project is very welc
 Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else, then call this effect in your project as needed.
 
 TL;DR
-below are the code for the effect, rendering 12.5deg light beam. If you configure correctly it won't lit your VC up
+below are the code for the effect, rendering 8.5deg light beam. If you configure correctly it won't lit your VC up
 (fyi, typical landing light beam aren't that wide, less than 15deg. taxi lights are much wider than 30, but less than 60deg.
 ```
 
