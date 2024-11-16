@@ -119,7 +119,7 @@ Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
 Z Scale Goal=0.00
-Falloff Exponent=2.00
+Falloff Exponent=1.600
 Inner Cone Angle=1.00
 Outer Cone Angle=8.00
 //eof
