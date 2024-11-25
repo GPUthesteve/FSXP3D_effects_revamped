@@ -6,7 +6,7 @@ no need to close source since it's "Modifiable", Use in any project is very welc
 Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else, then call this effect in your project as needed.
 
 TL;DR
-below are the code for the effect, rendering 8.5deg light beam. If you configure correctly it won't lit your VC up
+below are the code for the effect, rendering 8.5deg light beam with color temperature of 6100K and 600k.cd If you configure correctly it won't lit your VC up
 (fyi, typical landing light beam aren't that wide, less than 15deg. taxi lights are much wider than 30, but less than 60deg.
 ```
 
@@ -108,7 +108,7 @@ Heading=0.00, 0.00
 [Particle.1]
 Lifetime=0.00, 0.00
 Type=28
-X Scale=3000.00, 3000.00 //range in metres
+X Scale=1500.00, 1500.00 //range in metres
 Y Scale=0.00, 0.00
 Z Scale=0.00, 0.00
 X Scale Rate=0.00, 0.00
@@ -125,8 +125,9 @@ Static=1
 Face=0, 0, 0
 
 [ParticleAttributes.1]
-Color Start=255, 255, 215, 135
-Color End=255, 255, 215, 135
+//setted to 6000K
+Color Start=255, 255,248, 240
+Color End=255, 255,248, 240
 Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
