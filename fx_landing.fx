@@ -55,8 +55,8 @@ Face=1, 0, 1
 Blend Mode=2
 Texture=fx_2.bmp
 Bounce=0.00
-Color Start=255, 255,248, 240
-Color End=255, 255,248, 0
+Color Start=255, 243, 239,128 //day
+Color End=255, 243, 239, 128  //night
 Jitter Distance=0.00
 Jitter Time=0.00
 uv1=0.00, 0.00
@@ -115,8 +115,8 @@ Face=0, 0, 0
 [ParticleAttributes.1]
 //color setted to 6000K temp, aviation white
             //r,g,b,a arrangement. The Intensity value here applies throughout. 128 is equal to an intensity of 1. Lower than 128 is scaled to an intensity of 0. 255 is equal to an intensity of 50.
-Color Start=255,255,243,239 //day
-Color End=255,255,243,239  //night
+Color Start=255, 243, 239,128 //day
+Color End=255, 243, 239, 128  //night
 Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
