@@ -7,7 +7,7 @@ Priority=0
 
 [Properties]
 
-//begin cosmetics
+//begin cosmetics, taken from default landing.fx
 [Emitter.0]
 Lifetime=0.50, 0.50
 Delay=0.00, 0.00
@@ -69,7 +69,7 @@ Extrude Pitch Max=0.00
 Extrude Heading Max=0.00
 //end cosmetics
 
-//actual lights
+//begin actual dynamic light
 [Emitter.1]
 Lifetime=0.50, 0.50
 Delay=0.00, 0.00
@@ -96,7 +96,7 @@ Heading=0.00, 0.00
 [Particle.1]
 Lifetime=0.00, 0.00
 Type=28
-X Scale=3000.00, 3000.00 //range in metres
+X Scale=1500.00, 1500.00 //estimated effective range/throw in metres, calculated using "sqrt(rated candela*4)"
 Y Scale=0.00, 0.00
 Z Scale=0.00, 0.00
 X Scale Rate=0.00, 0.00
@@ -113,13 +113,15 @@ Static=1
 Face=0, 0, 0
 
 [ParticleAttributes.1]
-Color Start=255, 255, 215, 135
-Color End=255, 255, 215, 135
+//color setted to 6000K temp, aviation white
+            //a,r,g,b arrangement
+Color Start=255,255,243,239 //day
+Color End=255,255,243,239  //night
 Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
 Z Scale Goal=0.00
-Falloff Exponent=1.600
-Inner Cone Angle=1.00
-Outer Cone Angle=8.00
+Falloff Exponent=1.8 //too much means light would decay faster in range, vice versa
+Inner Cone Angle=1.00 //value must not approach outer angle else unwanted result would happen
+Outer Cone Angle=8.5 //vertical and horizontal effective beam angle
 //eof
