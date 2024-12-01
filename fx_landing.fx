@@ -1,7 +1,7 @@
 [Library Effect]
 Lifetime=5
 Version=2.00
-Display Name=8.5deg LL
+Display Name=8.5deg LL 600kcd
 Radius=-1
 Priority=0
 
