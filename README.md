@@ -12,7 +12,7 @@ below are the code for the effect, rendering 8.5deg light beam with color temper
 [Library Effect]
 Lifetime=5
 Version=2.00
-Display Name=8.5deg LL
+Display Name=8.5deg LL 600kcd
 Radius=-1
 Priority=0
 
@@ -66,8 +66,8 @@ Face=1, 0, 1
 Blend Mode=2
 Texture=fx_2.bmp
 Bounce=0.00
-Color Start=255, 255, 215, 255
-Color End=255, 255, 215, 0
+Color Start=255, 255,248, 240
+Color End=255, 255,248, 0
 Jitter Distance=0.00
 Jitter Time=0.00
 uv1=0.00, 0.00
@@ -107,7 +107,7 @@ Heading=0.00, 0.00
 [Particle.1]
 Lifetime=0.00, 0.00
 Type=28
-X Scale=1550, 1550 //estimated effective range/throw in metres, calculated using sqrt(rated candela*4), not sure why in x-axis though.
+X Scale=1500.00, 1500.00 //estimated effective range/throw in metres, calculated using "sqrt(rated candela*4)"
 Y Scale=0.00, 0.00
 Z Scale=0.00, 0.00
 X Scale Rate=0.00, 0.00
@@ -125,7 +125,7 @@ Face=0, 0, 0
 
 [ParticleAttributes.1]
 //color setted to 6000K temp, aviation white
-            //a,r,g,b arrangement
+            //r,g,b,a arrangement. The Intensity value here applies throughout. 128 is equal to an intensity of 1. Lower than 128 is scaled to an intensity of 0. 255 is equal to an intensity of 50.
 Color Start=255,255,243,239 //day
 Color End=255,255,243,239  //night
 Bounce=0.00
@@ -136,6 +136,7 @@ Falloff Exponent=1.8 //too much means light would decay faster in range, vice ve
 Inner Cone Angle=1.00 //value must not approach outer angle else unwanted result would happen
 Outer Cone Angle=8.5 //vertical and horizontal effective beam angle
 //eof
+
 ```
 below is result, TDS 737(NGX Merged)
 ![image](https://github.com/GPUthesteve/P3D_LandingLightEffectUpd/assets/89721316/3ec13a7b-fb83-4fae-a65a-c9b0c332dd29)
