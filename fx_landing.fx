@@ -114,7 +114,7 @@ Face=0, 0, 0
 
 [ParticleAttributes.1]
 //color setted to 6000K temp, aviation white
-            //a,r,g,b arrangement
+            //r,g,b,a arrangement. The Intensity value here applies throughout. 128 is equal to an intensity of 1. Lower than 128 is scaled to an intensity of 0. 255 is equal to an intensity of 50.
 Color Start=255,255,243,239 //day
 Color End=255,255,243,239  //night
 Bounce=0.00
