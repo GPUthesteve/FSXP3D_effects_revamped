@@ -2,14 +2,13 @@
 A simplest update to your old fx_landing.fx utilizing latest Dynamic Lighting Technology in Prepar3Dv4, V5.
 no need to close source since it's "Modifiable", Use in any project is very welcome.
 
-
-Wait, in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else, then call this effect in your project as needed.
+sadly in P3Dv4, replacing fx_landing.fx is not working, so please rename it to something else, then call this effect in your project as needed.
+also this would not work in p3dv6 (who use it anyways?)
 
 TL;DR
-below are the code for the effect, rendering 8.5deg light beam with color temperature of 6100K and 600k.cd If you configure correctly it won't lit your VC up
-(fyi, typical landing light beam aren't that wide, less than 15deg. taxi lights are much wider than 30, but less than 60deg.
+below are the code for the effect, rendering 8.5deg light beam with color temperature of 6000K and 600kcd. (If you configure correctly it won't lit your VC up)
+(fyi, typical landing light beam aren't that wide, typically than 15deg vert/horiz. taxi lights on the other hand, are much wider than 30, but less than 60deg.
 ```
-
 [Library Effect]
 Lifetime=5
 Version=2.00
@@ -19,7 +18,7 @@ Priority=0
 
 [Properties]
 
-//begin cosmetics
+//begin cosmetics, taken from default landing.fx
 [Emitter.0]
 Lifetime=0.50, 0.50
 Delay=0.00, 0.00
@@ -81,7 +80,7 @@ Extrude Pitch Max=0.00
 Extrude Heading Max=0.00
 //end cosmetics
 
-//actual lights
+//begin actual dynamic light
 [Emitter.1]
 Lifetime=0.50, 0.50
 Delay=0.00, 0.00
@@ -108,7 +107,7 @@ Heading=0.00, 0.00
 [Particle.1]
 Lifetime=0.00, 0.00
 Type=28
-X Scale=1500.00, 1500.00 //range in metres
+X Scale=1550, 1550 //estimated effective range/throw in metres, calculated using sqrt(rated candela*4), not sure why in x-axis though.
 Y Scale=0.00, 0.00
 Z Scale=0.00, 0.00
 X Scale Rate=0.00, 0.00
@@ -125,18 +124,18 @@ Static=1
 Face=0, 0, 0
 
 [ParticleAttributes.1]
-//setted to 6000K
-Color Start=255, 255,248, 240
-Color End=255, 255,248, 240
+//color setted to 6000K temp, aviation white
+            //a,r,g,b arrangement
+Color Start=255,255,243,239 //day
+Color End=255,255,243,239  //night
 Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
 Z Scale Goal=0.00
-Falloff Exponent=1.600
-Inner Cone Angle=1.00
-Outer Cone Angle=8.00
+Falloff Exponent=1.8 //too much means light would decay faster in range, vice versa
+Inner Cone Angle=1.00 //value must not approach outer angle else unwanted result would happen
+Outer Cone Angle=8.5 //vertical and horizontal effective beam angle
 //eof
-
 ```
 below is result, TDS 737(NGX Merged)
 ![image](https://github.com/GPUthesteve/P3D_LandingLightEffectUpd/assets/89721316/3ec13a7b-fb83-4fae-a65a-c9b0c332dd29)
