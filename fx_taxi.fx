@@ -113,8 +113,8 @@ Static=1
 Face=0, 0, 0
 
 [ParticleAttributes.1]
-Color Start=255, 255,248, 240
-Color End=255, 255,248, 240
+Color Start=255, 243, 239, 128 //day
+Color End=255, 243, 239,128    //night
 Bounce=0.00
 X Scale Goal=0.00
 Y Scale Goal=0.00
