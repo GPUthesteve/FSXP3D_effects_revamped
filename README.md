@@ -1,5 +1,8 @@
 # FSXP3D_effects_revamped
 This project beginned as a revamp to `fx.landing.fx` yet it grows larger by revamping vital aircraft lightings especially nav lights, beacons and strobe
+
+
+
 A simplest update to your old `fx.landing.fx` utilizing latest Dynamic Lighting Technology in Prepar3Dv4, V5.
 no need to close source since it's "Modifiable", Use in any project is very welcome.
 
