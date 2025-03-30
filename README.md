@@ -10,7 +10,7 @@ sadly in P3Dv4, replacing `fx.landing.fx` is not working, so please rename it to
 also this would not work in p3dv6 (who use it anyways?)
 
 TL;DR
-below are the code for the effect, rendering 8.5deg light beam with color temperature of 6000K and 600kcd. (If you configure correctly it won't lit your VC up)
+below are the example code for the effect, rendering 8.5deg light beam with color temperature of 6000K and 600kcd. (If you configure correctly it won't lit your VC up)
 (fyi, typical landing light beam aren't that wide, typically than 15deg vert/horiz. taxi lights on the other hand, are much wider than 30, but less than 60deg.
 ```
 [Library Effect]
